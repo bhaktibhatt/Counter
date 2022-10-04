@@ -1,47 +1,35 @@
-let count = 0; 
-countElement = document.getElementById("counter");
-
- function increment(){
-    //console.log("Button was clicked")
-    //ask html to get element using the id and reflect the increment on the doc
-    count +=1;
-    countElement.innerText =  count;
-    //console.log("Count was incremented to :"+count)
- }
- increment()
+//ask html to get element using the id and reflect the increment on the doc
+let countElement = document.getElementById("counter")
+let saveEl = document.getElementById("save-el")
+let count = 0
+ 
+function increment(){
+    count += 1;
+    countElement.textContent = count
+    console.log(count)
+}
   
 function decrement(){
     if(count>=1){
-    count-=1;
+        count-=1;
     }
     else{
         console.log("Count is 0")
     }
-    countElement.innerText = count;
-    // STATEMENT ADD KRNA PADGEAA CAUSE NO OF PEOPLE AINT IN MINUS
+    countElement.textContent = count;
 }
-decrement()
 
- function resetCounter()
- {
+function resetCounter(){ 
     count = 0;
-    countElement.innerText = count;
-
- }
-resetCounter()
+    countElement.textContent = count;
+    }
 
 function save(){
-    countElement.innerText = count;
-    console.log(count)
-    //alert("Saved Count:"+count);
+    let countStr = count + "-"
+    saveEl.textContent +=countStr;
 }
-save()
 
-//DOM
-//document-HTML doc
-//Object - doc is datatype object
-//Model - rep of actual element
-//save Previous enteries
+
 
 
 

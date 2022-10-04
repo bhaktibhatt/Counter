@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Passenger Counter</title>
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
 </head>
 <body>
     <div class="main">
@@ -13,16 +12,18 @@
             <h1>Counter for People Entered</h1>
             <h2 id="counter">0</h2>
         </div>
-        <div class="btn-container">
-            <div>
+        <div class="btn-container"> 
+            <div class="btn-inc-dec">
                 <button id="increment-btn" onclick="increment()">Increment</button>
                 <button id="decrement-btn" onclick="decrement()">Decrement</button>
             </div>
-            <div>
+            <div class="btn-reset-save">
                 <button id="reset-btn" onclick="resetCounter()">Reset</button>
                 <button id="save-btn" onclick="save()">Save</button>
             </div>
+            <div id="save-el" class="save-hist">Previous-Enteries : </div>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html> 

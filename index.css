@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;420;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,420;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,420;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,420;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,420;1,600;1,700;1,800;1,900&family=Roboto:wght@300&display=swap');
 
-@media (orientation:portrait) and (max-width:420){
+@media (orientation:portrait) and (max-width:420px){
     .btn-container{
         display: flex;
         flex-direction: column;
     }
 }
-@media (orientation:landscape) and (min-width:420){
+@media (orientation:landscape) and (max-height:500px){ 
+
     .btn-container{
         display: flex;
         flex-direction: row;
@@ -14,11 +15,14 @@
 }
 
 body{
-    background-color:#8b4141;
+    background-color:#181818;
     font-family:'Noto Sans Mono';
-    color:#f8f8f8;
+    color:#F2F2F2;
     text-align: center;
     font-size: 1.7vmax;
+}
+h1{
+    font-size: 2.5vmax;
 }
 .main{
     display: flex;
@@ -33,19 +37,26 @@ body{
 }
 button{
     all:unset;
-    background-color: #7ec13b;
+    background-color: #8758FF;
     height:4vmax;
     width:25vmax;
     border-radius: 20px;
-    border:3px solid #7ec13b;
-    margin: 1vmax 1vmax 1vmax 1vmax;
+    border:3px solid #A6D1E6;
+    margin: 1vmax;
 }
 
 button:hover{
-    background-color:#5b8c2b;
+    background-color:#51b0df;
 }
 button:active{
-    background-color: #94bd6b;
-    border-color:#f8f8f8;
+    background-color: #59b4e1;
+    border-color:#3D3C42;
     color: #686868;
+}
+.save-hist{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin:3vmax;
+    font-size: 2vmax;
 }
